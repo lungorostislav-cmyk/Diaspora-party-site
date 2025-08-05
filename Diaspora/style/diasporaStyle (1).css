@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+
+}
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url(/Diaspora/fonts/TrajanPro-Regular.woff) format('woff');
+}
+html {
+    font-family: 'Trajan Pro';
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    /* font-style: inherit; */
+    font-display: swap;
+    font-size: 20pt;
+}
+div.body {
+    position: fixed;
+    background-image:
+         url('/Diaspora/media/fullhd.gif');
+    background-size: cover;
+    background-position: center;
+    left: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+a {
+    color: brown;
+
+}
+a:hover {
+    color: white;
+    transition: 0.4s;
+}
+.container {
+    position: absolute;
+    /* left: 15vw; */
+    top: 30vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.artist-frame {
+    position: relative;
+    /* left: 17vw; */
+    background-color: rgba(0, 0, 0, 0.484);
+    padding: 20px 20px;
+    width: 500px;
+    height: max-content;
+    border-radius: 10px;
+}
+.frame-size {
+    width: 500px;
+    height: max-content;
+}
+img {
+    display: inline;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.navigation {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.484);
+    padding: 0% 10px;
+    border-radius: 10px;
+}
+
+#countdown {
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 35pt;
+    }
+    .container {
+        /* margin: 0% auto; */
+        /* flex-flow: column wrap; */
+        
+        align-items: center;
+        /* left: 7vw; */
+    }
+    .navigation {
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .artist-frame {
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navigation li {
+        display: inline-flex;
+    }
+    a {
+        color: brown;
+        /* background-color: antiquewhite;
+        border-radius: 400px; */
+    }
+
+}
